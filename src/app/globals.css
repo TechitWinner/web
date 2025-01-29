@@ -17,12 +17,19 @@
   --foreground-rgb: 23, 23, 23;
   --background-hsl: 0, 0%, 100%;
   --foreground-hsl: 0, 0%, 9%;
+  --brand: #0066FF;
+  --brand-rgb: 0, 102, 255;
+  --brand-hsl: 215, 100%, 50%;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-feature-settings: "liga" 1, "cult" 1, "ss01" 1, "ss02" 1, "ss03" 1, "ss04" 1, "cv10" 1, "cv11" 1;
 }
 
 .font-ico {
   font-family: FluentSystemIcons-Regular;
+}
+
+.font-tnum {
+  font-feature-settings: "liga" 1, "cult" 1, "ss01" 1, "ss02" 1, "ss03" 1, "ss04" 1, "cv10" 1, "cv11" 1, "tnum" 1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -78,8 +85,8 @@ body {
   a, .btn {
     @apply hidden md:flex flex-row items-center px-4 text-sm cursor-pointer h-12 hover:bg-[var(--foreground)] hover:text-[var(--background)] focus:bg-[var(--foreground)] focus:text-[var(--background)] active:opacity-75;
     &.active {
-      background: rgb(0,0,0);
-      background: linear-gradient(0deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 25%);
+      background: rgb(var(--brand-rgb));
+      background: linear-gradient(0deg, rgba(var(--brand-rgb),0.25) 0%, rgba(var(--brand-rgb),0) 30%);
       color: var(--foreground);
       &:hover {
         @apply bg-[var(--foreground)] text-[var(--background)];
@@ -95,7 +102,7 @@ body {
 }
 
 .link {
-  @apply underline hover:text-blue-500 cursor-pointer active:opacity-75;
+  @apply underline hover:text-[var(--brand)] cursor-pointer active:opacity-75;
 }
 
 @layer components {
@@ -112,7 +119,7 @@ body {
   @apply hover:bg-[var(--foreground)] hover:text-[var(--background)] focus:bg-[var(--foreground)] focus:text-[var(--background)] px-4 py-3;
   &.photo {
     @apply flex flex-col aspect-video hover:bg-[var(--foreground)] hover:text-[var(--background)] p-0;
-    &:hover img {
+    &:hover img, &:focus img {
       @apply object-contain;
     }
     img {
