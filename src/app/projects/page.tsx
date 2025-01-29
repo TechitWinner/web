@@ -22,7 +22,7 @@ export default function About() {
             Here&apos;s the list of them.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 divide-x-[0px] md:divide-x divide-y md:divide-y-[0px] divide-dashed border border-auto divide-auto">
-            <a className="grid-card" rel="noreferrer nofollow noopener" target="_blank" href="https://unix.in.th">
+            <a className="grid-card" rel="noreferrer nofollow noopener" target="_blank" href="https://giskette.dailitation.xyz/techit/www">
               <h3>13th major update of my website</h3>
               <p className="text-sm">
                 The 13th look for the Techit&apos;s Home website. It&apos;s a long journey since the first look that is just saying &quot;Techit&apos;s Website, nothing here.&quot;
