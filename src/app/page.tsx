@@ -6,7 +6,7 @@ export default function Home() {
           <div className="aspect-square max-w-56">
             <img alt="Techit Thawiang's profile picture" className="w-full h-full" src="/techit2025_student-cropped.jpg"/>
           </div>
-          <div className="flex flex-col items-center justify-center text-center md:text-start h-full">
+          <div className="flex flex-col items-start justify-center text-center md:text-start h-full w-full">
             <div className="block">
               <p>Hello, my name is</p>
               <h1 className="text-5xl md:text-7xl">Techit Thawiang</h1>

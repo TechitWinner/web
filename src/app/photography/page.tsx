@@ -1,4 +1,24 @@
-import photography from "../assets/photography.json";
+import photography from "../../assets/photography.json";
+import { Metadata } from "next";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const pageTitle = "Photography | Techit's Home";
+  const pageDescription = "I love photography—it's my way of capturing beauty and preserving meaningful moments.";
+  const allowIndexing = true;
+
+  return {
+    title: pageTitle,
+    description: pageDescription,
+    openGraph: {
+      title: pageTitle,
+      description: pageDescription,
+      url: "https://techit.dailitation.xyz/photography",
+      siteName: "techit.dailitation.xyz",
+      type: "website",
+    },
+    robots: allowIndexing ? "index,follow" : "noindex,nofollow",
+  };
+}
 
 export default function Photography() {
 
@@ -11,7 +31,7 @@ export default function Photography() {
             <div className="aspect-square max-w-56 max-h-56 w-full h-full flex items-center justify-center bg-[var(--foreground)] text-[var(--background)]">
               <p className="font-ico text-9xl m-0"></p>
             </div>
-            <div className="flex flex-col items-center justify-center text-center md:text-start h-full">
+            <div className="flex flex-col items-start justify-center text-center md:text-start h-full w-full">
               <div className="block">
                 <p className="font-mono">/photography</p>
                 <h1 className="text-5xl md:text-7xl">Photography</h1>

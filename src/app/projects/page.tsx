@@ -1,3 +1,24 @@
+import { Metadata } from "next";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const pageTitle = "Projects | Techit's Home";
+  const pageDescription = "Projects I've made on my own, with friends, or helped out with. Each one shows what I've worked on and learned.";
+  const allowIndexing = true;
+
+  return {
+    title: pageTitle,
+    description: pageDescription,
+    openGraph: {
+      title: pageTitle,
+      description: pageDescription,
+      url: "https://techit.dailitation.xyz/projects",
+      siteName: "techit.dailitation.xyz",
+      type: "website",
+    },
+    robots: allowIndexing ? "index,follow" : "noindex,nofollow",
+  };
+}
+
 export default function About() {
     return(
       <div className="container">
@@ -6,7 +27,7 @@ export default function About() {
             <div className="aspect-square max-w-56 max-h-56 w-full h-full flex items-center justify-center bg-[var(--foreground)] text-[var(--background)]">
               <p className="font-ico text-9xl m-0"></p>
             </div>
-            <div className="flex flex-col items-center justify-center text-center md:text-start h-full">
+            <div className="flex flex-col items-start justify-center text-center md:text-start h-full w-full">
               <div className="block">
                 <p className="font-mono">/projects</p>
                 <h1 className="text-5xl md:text-7xl">Projects</h1>
@@ -69,7 +90,7 @@ export default function About() {
             List of projects or products I&apos;ve contributed to or helping with stuff.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 divide-x-[0px] md:divide-x divide-y md:divide-y-[0px] divide-dashed border border-auto divide-auto">
-            <a className="grid-card" rel="noreferrer nofollow noopener" target="_blank" href="https://unix.in.th">
+            <a className="grid-card" rel="noreferrer nofollow noopener" target="_blank" href="https://system76.com/cosmic">
               <h3>COSMIC Desktop Environment</h3>
               <p className="text-sm">
                 Contributed by translating 3 sub-projects.
