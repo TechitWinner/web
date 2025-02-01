@@ -4,8 +4,8 @@ import Link from "next/link";
 export default function Footer() {
     return(
         <React.Fragment>
-            <footer className="container">
-                <div className="child border-t">
+            <footer className="container border-t">
+                <div className="child">
                     <div className="text-center">
                         <h2>www by Techit Thawiang</h2>
                         <p className="text-[12px]">Powered by <a className="link">dailitation.xyz</a></p>
