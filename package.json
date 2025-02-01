@@ -3,18 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "pnpm exec turbo run dev",
-    "build": "pnpm exec turbo run build",
-    "start": "pnpm exec turbo run start",
-    "deploy": "pnpm exec turbo run deploy",
     "frontend:pkg": "pnpm install --filter=@techitwinner/web-frontend",
-    "frontend:dev": "pnpm dev --filter=@techitwinner/web-frontend",
-    "frontend:build": "pnpm build --filter=@techitwinner/web-frontend",
-    "frontend:start": "pnpm start --filter=@techitwinner/web-frontend",
-    "backend:pkg": "pnpm install --filter=@techitwinner/web-backend",
-    "backend:dev":  "pnpm dev --filter=@techitwinner/web-backend",
-    "backend:build":  "pnpm build --filter=@techitwinner/web-backend",
-    "backend:deploy":  "pnpm deploy --filter=@techitwinner/web-backend"
+    "frontend:dev": "pnpm exec turbo run dev --filter=@techitwinner/web-frontend",
+    "frontend:build": "pnpm exec turbo run build --filter=@techitwinner/web-frontend",
+    "frontend:start": "pnpm exec turbo run start --filter=@techitwinner/web-frontend",
+    "backend:windows":  "pnpm exec code/backend/pocketbase.exe serve --http localhost:3002",
+    "backend:linux":  "pnpm exec code/backend/pocketbase serve --http localhost:3002"
   },
   "devDependencies": {
     "prettier": "^3.3.2",
