@@ -17,6 +17,10 @@ node_modules/
 !.yarn/releases
 !.yarn/versions
 
+# backend ignore pocketbase
+code/backend/pb_data
+code/backend/pb_migrations
+
 # testing
 **/coverage
 
