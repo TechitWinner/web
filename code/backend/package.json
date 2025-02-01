@@ -1,36 +1,11 @@
 {
-  "name": "@techitwinner/web-backend",
-  "version": "0.1.0",
-  "private": true,
-  "description": "web backend by Strapi",
-  "scripts": {
-    "build": "strapi build",
-    "deploy": "strapi deploy",
-    "develop": "strapi develop",
-    "start": "strapi start",
-    "strapi": "strapi"
-  },
-  "dependencies": {
-    "@strapi/plugin-cloud": "5.9.0",
-    "@strapi/plugin-users-permissions": "5.9.0",
-    "@strapi/strapi": "5.9.0",
-    "better-sqlite3": "11.3.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-router-dom": "^6.0.0",
-    "styled-components": "^6.0.0"
-  },
-  "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "typescript": "^5"
-  },
-  "engines": {
-    "node": ">=18.0.0 <=22.x.x",
-    "npm": ">=6.0.0"
-  },
-  "strapi": {
-    "uuid": "e8af5c8b-17c5-4017-bcee-49b71dbe468a"
+    "name": "@techitwinner/web-backend",
+    "version": "0.25.0",
+    "private": true,
+    "description": "web backend powered by Pocketbase",
+    "scripts": {
+        "serve:windows": "./pocketbase.exe serve",
+        "serve:linux": "./pocketbase serve"
+    }
   }
-}
+  
