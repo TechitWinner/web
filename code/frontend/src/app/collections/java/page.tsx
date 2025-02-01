@@ -1,4 +1,3 @@
-import people from '@/assets/people.json';
 import { Metadata } from "next";
 
 export async function generateMetadata(): Promise<Metadata> {

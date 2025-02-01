@@ -1,4 +1,3 @@
-import people from '@/assets/people.json';
 import Link from 'next/link';
 import { Metadata } from "next";
 
