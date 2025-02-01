@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { Metadata } from "next";
 import { fetchAllPosts } from '@/library/usePosts';
-import { getPostCategory } from '@/library/usePosts';
 
 export async function generateMetadata(): Promise<Metadata> {
   const pageTitle = "Posts | Techit's Home";

@@ -1,5 +1,4 @@
 import PocketBase from 'pocketbase';
-import { useState, useEffect } from 'react';
 
 export const fetchAllPosts = async () => {
     const pb = new PocketBase(process.env.BACKEND_URL);
