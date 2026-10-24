@@ -4,11 +4,11 @@
             <section class="web-section" aria-labelledby="hero" aria-describedby="what-does-he-do?">
                 <img width="240" height="240" style="margin-bottom: calc(var(--ui-spacing)*6);" src="https://files.techit.win/files/assets/profile/techit/1758801557516.jpeg" alt="Techit Thawiang's avatar.">
                 <h1 id="hero" class="font-hero">Techit Thawiang</h1>
-                <p id="what-does-he-do?" class="font-hero-desc">A 10th grader <span style="color: #0066ff;">hobbyist developer</span> and a <span style="color: #ff6600;">self-hoster</span> who's exploring computer science.</p>
+                <p id="what-does-he-do?" class="font-hero-desc">A 11th grader <span style="color: #0066ff;">hobbyist developer</span> and a <span style="color: #ff6600;">self-hoster</span> who's exploring computer science.</p>
             </section>
             <section class="web-section" aria-labelledby="about-me" aria-describedby="about-me-paragraph-1">
                 <h2 class="web-title" id="about-me">Who am I?</h2>
-                <p id="about-me-paragraph-1">My name is Techit Thawiang, aka <u>TechitWinner</u>. I'm a 15 years old 10th grader at Ko Pho Tuay Ngam Wittaya School. In my free time, I usually spend my time playing video games or learning more about software engineering.</p>
+                <p id="about-me-paragraph-1">My name is Techit Thawiang, aka <u>TechitWinner</u>. I'm a 16 years old 11th grader at Ko Pho Tuay Ngam Wittaya School. In my free time, I usually spend my time playing video games or learning more about software engineering.</p>
                 <p id="about-me-paragraph-2">In the future, I dream of having my own tech company, being a network engineer or a software engineer.</p>
             </section>
             <section class="web-section" aria-labelledby="posts" aria-describedby="posts-paragraph-1">
