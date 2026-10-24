@@ -30,10 +30,7 @@
     --color-inverse: #ff6600;
     --color-inverse-strong: #d55500;
 
-    --font-sans: "Fira Sans", "Noto Sans Thai Looped", sans-serif;
-    --font-sans--font-feature-settings: "liga", "calt";
-    --font-mono: "Fira Mono", "SF Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --font-serif: 'Linux Libertine','Georgia', 'Source Serif 4', Georgia, Garamond, "Times New Roman", Times, 'Noto Serif Thai', serif;
+    --font-sans: "Google Sans Flex", "Maitree", sans-serif;
 
     --ease-fluid: 0.2, 0, 0, 1;
     --ease-fluid-in: .6, .2, .7, .4;
